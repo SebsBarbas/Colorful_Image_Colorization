@@ -16,7 +16,7 @@ class Colorization(Model):
         # second layer
         self.conv2_1 = Conv2D(128, [3, 3], activation = 'relu', padding = 'same', strides = (2, 2), name = 'conv2_1')
         self.conv2_2 = Conv2D(128, [3, 3], activation = 'relu', padding = 'same', name = 'conv2_2')
-        self.conv2_3 = Conv2D(128, [3,3], activation = 'relu', strides = (2, 2), padding = 'same', name = 'conv2_3')
+        self.conv2_3 = Conv2D(128, [3, 3], activation = 'relu', padding = 'same', name = 'conv2_3')
         self.norm2 = BatchNormalization()
 
 
